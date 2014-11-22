@@ -2,7 +2,7 @@ var REPOS_CONT = document.getElementById('projects'),
     REPOS_URL = 'https://api.github.com/users/opensoars/repos'
 
 
-function getProjectHtml(repo){
+function getRepoHTML(repo){
   return ""
     + "<div class='project'>"
     + "<h5 class='project-title'><a href='"
@@ -19,6 +19,13 @@ function getProjectHtml(repo){
 }
 
 
+/**
+ * Handles an array of repos
+ *
+ * Loops through repos, calling getRepoHTML for every repo
+ * 
+ * @param repos {array}
+ */
 function handleRepos(repos){
 
   repos = repos || [];
@@ -34,13 +41,15 @@ function handleRepos(repos){
   REPOS_CONT.innerHTML = '';
 
   repos.forEach(function(repo){
-    REPOS_CONT.innerHTML += getProjectHtml(repo);
+    REPOS_CONT.innerHTML += getRepoHTML(repo);
   });
 
 }
 
 
-
+/**
+ * Recursive ajax GET repos function
+ */
 (function reqRepos(){
 
   var req = new XMLHttpRequest();
