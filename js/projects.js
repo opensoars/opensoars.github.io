@@ -40,6 +40,7 @@ function handleRepos(repos){
 }
 
 
+
 (function reqRepos(){
 
   var req = new XMLHttpRequest();
@@ -52,7 +53,6 @@ function handleRepos(repos){
         handleRepos(repos);
       }
       catch(e){
-        console.log(e);
         handleRepos();
       }
     }
