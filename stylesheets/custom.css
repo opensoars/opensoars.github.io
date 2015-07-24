@@ -2,6 +2,34 @@
   box-sizing: border-box;
 }
 
+
+#page_header {
+  opacity: 1;
+  -webkit-animation: fadein 1.5s; -moz-animation: fadein 1.5s; -ms-animation: fadein 1.5s; -o-animation: fadein 1.5s; animation: fadein 1.5s;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@-ms-keyframes fadein {
+  from { opacity: 0; }
+  to { opacity: 1; } 
+}
+@-o-keyframes fadein {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+
 pre {
   font-family: monospace;
   font-size: 1em;
