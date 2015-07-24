@@ -40,4 +40,9 @@ pre {
     margin: 0 0 4em 0;
     width: 100%;
   }
+
+  .page-header {
+    text-align: left;
+  }
+
 }
