@@ -4,10 +4,10 @@
 
 pre {
   font-family: monospace;
-  font-size: 0.8em;
+  font-size: 1em;
   text-align: left;
   margin: 0 auto;
-  width: 27em;
+  width: 20em;
   margin-bottom: 4em;
 }
 
@@ -26,4 +26,14 @@ pre {
 
 .github-btn {
   padding-top: 1em;
+}
+
+
+@media(max-width: 480px) {
+  pre {
+    font-family: monospace;
+    font-size: 0.8em;
+    text-align: left;
+    margin: 0 0 4em 0;
+  }
 }
