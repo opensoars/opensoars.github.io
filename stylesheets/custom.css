@@ -5,6 +5,9 @@
 pre {
   font-family: monospace;
   font-size: 14px;
+  text-align: left;
+  margin: 0 auto;
+  width: 500px;
 }
 
 .project-desc{
@@ -18,3 +21,4 @@ pre {
 .tldr {
   margin-bottom: 40px;
 }
+
