@@ -1,7 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+
+pre {
+  font-family: monospace;
+  font-size: 14px;
+}
+
 .project-desc{
   margin-top: 0px;
 }
 
-.project-title{
+.project-title {
   margin-bottom: 0px;
+}
+
+.tldr {
+  margin-bottom: 40px;
 }
