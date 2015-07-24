@@ -4,7 +4,7 @@
 
 pre {
   font-family: monospace;
-  font-size: 14px;
+  font-size: 0.9em;
   text-align: left;
   margin: 0 auto;
   width: 19em;
@@ -17,6 +17,7 @@ pre {
 
 .project-title {
   margin-bottom: 0px;
+  font-size: 1.4em;
 }
 
 .tldr {
