@@ -1,15 +1,13 @@
 // Gets filled with completed repo templates
 var REPOS_CONT = document.getElementById('projects');
   
-// Where to send the GET request
 var REPOS_URL = 'https://api.github.com/users/opensoars/repos';
 
-// How much interval between repo GETs?
 var GET_INTERVAL = 200000;
 
 
 /**
- * HTML template for a repo
+ * HTML template for a repo.
  *
  * @param repo {object}
  * @return {string}  Completed repo template
@@ -31,9 +29,8 @@ function getRepoHTML(repo){
 }
 
 /**
- * Handles an array of repos
- *
- * Loops through repos, calling getRepoHTML for every repo
+ * Handles an array of repos. Loops through repos, calling
+ * getRepoHTML for every repo and draws the returned HTML in the REPOS_CONT.
  * 
  * @param repos {array}
  */
@@ -58,9 +55,7 @@ function handleRepos(repos){
 }
 
 
-/**
- * Recursive ajax GET repos function
- */
+/** Recursive ajax GET repos function. */
 (function reqRepos(){
 
   var req = new XMLHttpRequest();
