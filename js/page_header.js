@@ -20,7 +20,7 @@ setTimeout(function () {
 
     setBgStr(getBgStr(deg));
 
-    deg++;
+    deg += 0.5;
 
     //setBgStr(getBgStr((Math.cos(new Date().getTime() * 0.00003) + 1) * 1800));
   }, 1000 / 30)
