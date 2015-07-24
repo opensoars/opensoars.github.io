@@ -15,7 +15,13 @@
     <section class="page-header">
       <h1 class="project-name">Opensoars</h1>
       <h2 class="project-tagline">Coffee, code and perhaps some beer.</h2>
-
+      <pre>
+drink([]) -> stop_working();
+drink([H | T]) ->
+  case H of
+    coffee -> [work() | drink(T)];
+    beer -> [wrko() | drink(T)];
+  end.</pre>
 
       <a href="https://github.com/opensoars/" class="btn github-btn">
         <img src='images/blacktocat.png'>
@@ -59,7 +65,13 @@
         </a>Open source projects
       </h2>
 
+      <!-- Projects container -->
+      <p>Most recently updated repos are shown at the top.</p>
 
+      <section id="projects">
+        <p><h5>Gettin' repos!</h5></p>
+      </section>
+    
     </section>
 
     <script src='js/projects.js'></script>
