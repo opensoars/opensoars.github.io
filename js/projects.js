@@ -56,6 +56,7 @@ function handleRepos(repos){
 
 
 /** Recursive ajax GET repos function. */
+/*
 (function reqRepos(){
 
   var req = new XMLHttpRequest();
@@ -79,7 +80,7 @@ function handleRepos(repos){
 
   setTimeout(reqRepos, GET_INTERVAL);
 }());
-
+*/
 
 
 
