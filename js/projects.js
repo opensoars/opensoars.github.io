@@ -9,8 +9,8 @@ var GET_INTERVAL = 200000;
 /**
  * HTML template for a repo.
  *
- * @param repo {object}
- * @return {string}  Completed repo template
+ * @param {object} repo - Repo object from repos array
+ * @return {string}  Completed repo html
  */
 function getRepoHTML(repo){
   return ""
@@ -35,7 +35,6 @@ function getRepoHTML(repo){
  * @param repos {array}
  */
 function handleRepos(repos){
-
   repos = repos || [];
 
   if(repos.length === 0 || repos.constructor !== Array)
@@ -51,17 +50,14 @@ function handleRepos(repos){
   repos.forEach(function(repo){
     REPOS_CONT.innerHTML += getRepoHTML(repo);
   });
-
 }
 
 
 /** Recursive ajax GET repos function. */
-
 (function getRepos(){
   var req = new XMLHttpRequest();
 
   req.onreadystatechange = function (){
-
     if(this.readyState === 4){
       try{
         var repos = JSON.parse(this.response);
@@ -71,7 +67,6 @@ function handleRepos(repos){
         handleRepos();
       }
     }
-
   };
 
   req.open('GET', REPOS_URL, true);

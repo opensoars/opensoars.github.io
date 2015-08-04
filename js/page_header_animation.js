@@ -25,5 +25,5 @@ setTimeout(function () {
     /*
     setBgStr(getBgStr((Math.cos(new Date().getTime() * 0.00003) + 1) * 1800));
     */
-  }, 1000 / 30);
-}, 1500);
+  }, 1000 / 30)
+}, 1500)
