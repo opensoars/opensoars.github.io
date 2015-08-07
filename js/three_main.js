@@ -76,16 +76,16 @@ scene.add(textMesh);
 
 
 var light1 = new THREE.DirectionalLight(0xffffff);
-light1.castShadow = true;
+//light1.castShadow = true;
 //light1.shadowCameraVisible = true
-light1.shadowCameraNear = 0;
-light1.shadowCameraFar = 256;
-light1.shadowCameraWidth = 2048;
-light1.shadowCameraHeight = 2048;
-light1.shadowCameraLeft = -1000;
-light1.shadowCameraRight = 1000;
-light1.shadowMapWidth = 2048;
-light1.shadowMapHeight = 2048;
+//light1.shadowCameraNear = 0;
+//light1.shadowCameraFar = 256;
+//light1.shadowCameraWidth = 2048;
+//light1.shadowCameraHeight = 2048;
+//light1.shadowCameraLeft = -1000;
+//light1.shadowCameraRight = 1000;
+//light1.shadowMapWidth = 2048;
+//light1.shadowMapHeight = 2048;
 light1.position.set(0, 0, 100);
 
 scene.add(light1);
@@ -129,5 +129,9 @@ var render = function () {
 
 render();
 
+window.addEventListener('resize', function () {
+  camera.aspect = window.innerWidth / window.innerHeight;
+  camera.updateProjectionMatrix();
 
-console.log(window.parent);
+  renderer.setSize( window.innerWidth, window.innerHeight );
+});

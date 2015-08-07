@@ -13,6 +13,9 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/custom.css" media="screen">
   </head>
   <body>
+
+    <div id='fader'></div>
+
     <section id='page_header' class="page-header">
       <h1 class="project-name">Opensoars</h1>
       <h2 class="project-tagline">Code, coffee, tech and perhaps some beer.</h2>
@@ -33,7 +36,11 @@ drink([H | T]) ->
 
       <article class='interests'>
         <header>
-          <h2>Interests <button id='go_btn'>Go</button></h2>
+          <h2>Interests
+            <button id='go_btn'>
+              <span class='arrow arrow1'>&#8596;</span>
+              <span class='arrow arrow2'>&#8597;</span>
+            </button><button id='close_btn'>x</button></h2>
         </header>
         <section class='single-list'>
           <ul id='interests_list'>
