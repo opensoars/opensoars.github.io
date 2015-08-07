@@ -45,9 +45,14 @@ pre {
   margin-top: 0px;
 }
 
-.project-title {
+.project-title > a {
   margin-bottom: 0px;
-  font-size: 1.4em;
+  font-size: 1.7em;
+  text-decoration: none;
+}
+
+.project-title > a:hover {
+  text-decoration: underline;
 }
 
 .tldr {
@@ -58,9 +63,31 @@ pre {
   padding-top: 1em;
 }
 
+section.split-lists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+section.split-list {
+  width: 50%;
+}
+
+section.single-list {
+  display: none;
+}
+
+@media(max-width: 768px) {
+  section.single-list {
+    display: block;
+  }
+  section.split-lists {
+    display: none;
+  }
+}
 
 @media(max-width: 480px) {
-
   pre {
     font-family: monospace;
     font-size: 0.6em;
@@ -72,7 +99,6 @@ pre {
   .page-header {
     text-align: left;
   }
-
 }
 
 

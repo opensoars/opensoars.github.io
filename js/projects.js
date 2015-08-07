@@ -1,5 +1,5 @@
 // Gets filled with completed repo templates
-var REPOS_CONT = document.getElementById('projects');
+var projects_section = document.getElementById('projects_section');
   
 var REPOS_URL = 'https://api.github.com/users/opensoars/repos';
 
@@ -10,17 +10,17 @@ var GET_INTERVAL = 200000;
  * HTML template for a repo.
  *
  * @param {object} repo - Repo object from repos array
- * @return {string}  Completed repo html
+ * @return {string} - Completed repo html
  */
 function getRepoHTML(repo){
   return ""
     + "<div class='project'>"
     + "<h5 class='project-title'><a href='"
     + (repo.homepage ? repo.homepage : repo.html_url)
-    + "'>- " + repo.name + "</a></h5>"
+    + "'>> " + repo.name + "</a></h5>"
 
     + (repo.description 
-       ? "<p class='project-desc'>&nbsp; — " + repo.description + "</p>"
+       ? "<p class='project-desc'>— " + repo.description + "</p>"
        : "" 
       )
 
@@ -30,30 +30,32 @@ function getRepoHTML(repo){
 
 /**
  * Handles an array of repos. Loops through repos, calling
- * getRepoHTML for every repo and draws the returned HTML in the REPOS_CONT.
+ * getRepoHTML for every repo and draws the returned HTML in the
+ * projects_section.
  * 
- * @param repos {array}
+ * @param {array} repos
  */
 function handleRepos(repos){
   repos = repos || [];
 
   if(repos.length === 0 || repos.constructor !== Array)
-    return REPOS_CONT.innerHTML = 'Could not /GET repos!';
+    return projects_section.innerHTML = 'Could not /GET repos!';
 
   repos.sort(function (a, b){
     return (new Date(b.pushed_at).getTime() - new Date(a.pushed_at).getTime());
   });
 
 
-  REPOS_CONT.innerHTML = '';
+  projects_section.innerHTML = '';
 
   repos.forEach(function(repo){
-    REPOS_CONT.innerHTML += getRepoHTML(repo);
+    projects_section.innerHTML += getRepoHTML(repo);
   });
 }
 
 
 /** Recursive ajax GET repos function. */
+/*
 (function getRepos(){
   var req = new XMLHttpRequest();
 
@@ -74,7 +76,7 @@ function handleRepos(repos){
 
   setTimeout(getRepos, GET_INTERVAL);
 }());
-
+*/
 
 
 
