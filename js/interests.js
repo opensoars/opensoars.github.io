@@ -2,6 +2,7 @@ var go_btn = document.getElementById('go_btn'),
     iframe_section = document.getElementById('iframe_section');
 
 go_btn.addEventListener('click', function () {
+  stopAnimation();
   iframe_section.innerHTML = "<iframe src='three_index.html'>";
 });
 
