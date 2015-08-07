@@ -196,21 +196,9 @@ iframe {
   -ms-animation: fadein 1.5s;
   -o-animation: fadein 1.5s;
   animation: fadein 1.5s;
-  
+
 }
 
 #go_btn:hover {
   text-decoration: underline;
-}
-
-#go_btn .arrow {
-  width: 25px;
-  height: 25px;
-  display: block;
-}
-
-#go_btn .arrow2 {
-  position: relative;
-  top: -25px;
-  left: 12.5px;
 }
