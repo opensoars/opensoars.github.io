@@ -1,6 +1,6 @@
+/*
 var fader = document.getElementById('fader');
 
-/*
 var go_btn = document.getElementById('go_btn'),
     iframe_section = document.getElementById('iframe_section');
 
