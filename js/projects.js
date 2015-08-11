@@ -55,7 +55,6 @@ function handleRepos(repos){
 
 
 /** Recursive ajax GET repos function. */
-
 (function getRepos(){
   var req = new XMLHttpRequest();
 
