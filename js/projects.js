@@ -16,7 +16,7 @@
   function getRepoHTML(repo){
     return ""
       + "<div class='project'>"
-      + "<h5 class='project-title'><a href='"
+      + "<h5 class='project-title'><a target='_blank' href='"
       + (repo.homepage ? repo.homepage : repo.html_url)
       + "'>" + repo.name + "</a></h5>"
 
