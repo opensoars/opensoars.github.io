@@ -1,39 +1,48 @@
-var page_header = document.getElementById('page_header');
+(function () {
 
-var deg = 120;
+  var page_header = document.getElementById('page_header');
 
-var interval_id;
+  var deg = 120;
 
-function getBgStr(deg) {
-  return 'linear-gradient(' + deg + 'deg, #155799, #159957)';
-}
+  var interval_id;
 
-function setBgStr(bg_str) {
-  page_header.style.backgroundImage = bg_str;
-} 
+  /**
+   * @param {number} deg - Gradient degree
+   * @return {string} - Gradient style string
+   */
+  function getBgStr(deg) {
+    return 'linear-gradient(' + deg + 'deg, #155799, #159957)';
+  }
 
-function startAnimation(timeout) {
-  setTimeout(function () {
-    interval_id = window.setInterval(function () {
+  /**
+   * @param {string} bg_str - Gradient background string
+   */
+  function setBgStr(bg_str) {
+    page_header.style.backgroundImage = bg_str;
+  } 
 
-      if (deg === 359) {
-        deg = 0;
-      }
+  function startAnimation(timeout) {
+    setTimeout(function () {
+      interval_id = window.setInterval(function () {
 
-      setBgStr(getBgStr(deg));
+        if (deg === 359) {
+          deg = 0;
+        }
 
-      deg += 0.5;
+        setBgStr(getBgStr(deg));
 
-      /*
-      setBgStr(getBgStr((Math.cos(new Date().getTime() * 0.00003) + 1) * 1800));
-      */
-    }, 1000 / 30);
-  }, timeout || 0);
-}
+        deg += 0.5;
+
+      }, 1000 / 30);
+    }, timeout || 0);
+  }
 
 
-function stopAnimation() {
-  window.clearInterval(interval_id);
-}
+  function stopAnimation() {
+    window.clearInterval(interval_id);
+  }
 
-startAnimation(1500);
+  startAnimation(1500);
+
+}());
+
