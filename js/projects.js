@@ -2,7 +2,7 @@
   // Gets filled with completed repo templates
   var projects_section = document.getElementById('projects_section');
     
-  var REPOS_URL = 'https://api.github.com/users/opensoars/repos';
+  var REPOS_URL = 'https://api.github.com/users/opensoars/repos?per_page=100';
 
   var GET_INTERVAL = 200000;
 
