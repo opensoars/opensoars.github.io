@@ -20,7 +20,7 @@
       <h1 class="project-name">Opensoars</h1>
       <h2 class="project-tagline">Code, coffee, tech and perhaps some beer.</h2>
       <pre>
-drink([]) -> stop_working();
+drink([]) -> drink(getDrinks());
 drink([H | T]) ->
   case H of
     coffee -> [work() | drink(T)];
