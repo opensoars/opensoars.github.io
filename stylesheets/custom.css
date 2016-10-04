@@ -71,6 +71,7 @@ pre {
   margin: 0 auto;
   width: 21em;
   margin-bottom: 4em;
+  overflow: hidden;
 }
 
 .project-desc{
