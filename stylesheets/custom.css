@@ -84,6 +84,23 @@ pre {
   text-decoration: none;
 }
 
+h2.project-name {
+  padding: 0.6rem 0.9rem;
+}
+
+a:hover > .project-name, a > .project-name, a:visited > .project-name, a:active > .project-name, a:link > .project-name {
+  margin-bottom: 0px;
+  font-size: 1rem;
+
+  margin-top: 2rem;
+  margin-left: -5px;
+}
+
+a:hover > .project-name {
+  text-decoration: underline;
+  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+}
+
 .project-title > a:hover {
   text-decoration: underline;
 }
@@ -94,6 +111,7 @@ pre {
 
 .github-btn {
   padding-top: 1em;
+  margin: 0px;
 }
 
 section.split-lists {
