@@ -1,22 +1,48 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Opensoars.github.io : Code, coffee, tech and perhaps some beer.">
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Opensoars.github.io : Code, coffee, tech and perhaps some beer."
+    />
     <title>Opensoars</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/custom.css" media="screen">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="stylesheets/normalize.css"
+      media="screen"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="stylesheets/stylesheet.css"
+      media="screen"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="stylesheets/github-light.css"
+      media="screen"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="stylesheets/custom.css"
+      media="screen"
+    />
   </head>
   <body>
-
     <!-- <div id='fader'></div> -->
 
-    <section id='page_header' class="page-header">
+    <section id="page_header" class="page-header">
       <h1 class="project-name">Opensoars</h1>
       <h2 class="project-tagline">Code, coffee, tech and perhaps some beer.</h2>
       <pre>
@@ -25,31 +51,32 @@ drink([H | T]) ->
   case H of
     coffee -> [work() | drink(T)];
     beer -> [wrko() | drink(T)];
-  end.</pre>
+  end.</pre
+      >
 
       <a href="https://github.com/opensoars/" class="btn github-btn">
-        <img src="images/blacktocat.png" alt="Github">
+        <img src="images/blacktocat.png" alt="Github" />
       </a>
-      <br>
-<!--       <a href="http://samuels.site">
+      <br />
+      <!--       <a href="http://samuels.site">
         <h2 class="btn project-name">Samuels.site</h2>
       </a> -->
-
     </section>
 
     <section class="main-content">
       <article class="interests">
         <header>
-          <h2>Interests
+          <h2>
+            Interests
             <!--<button id="go_btn">+</button>
             <button id="close_btn">x</button>-->
           </h2>
         </header>
         <p class="tldr">Tl;dr tech.</p>
-        
+
         <section class="single-list">
           <ul id="interests_list">
-<!--             <li>Erlang</li>
+            <!--             <li>Erlang</li>
             <li>Functional programming</li>
             <li>Lisp / Scheme</li>
             <li>C / C++</li>
@@ -100,6 +127,8 @@ drink([H | T]) ->
             <li>Fractals</li>
             <li>OpenGL</li>
             <li>WebGL / Three.js</li>
+            <li>WebVR</li>
+            <li>A-frame</li>
             <li>GLSL</li>
             <li>GPGPU</li>
             <li>Vulkan</li>
@@ -115,6 +144,8 @@ drink([H | T]) ->
             <li>SQL</li>
             <li>Epic workflows & development environments</li>
             <li>React</li>
+            <li>Redux</li>
+            <li>Component based architecture</li>
             <li>PHP</li>
             <li>WordPress</li>
             <li>Angular</li>
@@ -122,10 +153,13 @@ drink([H | T]) ->
             <li>Backbone.js</li>
             <li>Cryptology</li>
             <li>Advanced math</li>
+            <li>Serverless</li>
+            <li>AWS (Lambda)</li>
+            <li>Puppeteer</li>
+            <li>Automated testing (front & back)</li>
+            <li>Service Workers</li>
           </ul>
         </section>
-
-
 
         <section class="split-lists">
           <section class="split-list left">
@@ -135,15 +169,15 @@ drink([H | T]) ->
             <ul id="interests_list_right"></ul>
           </section>
         </section>
-        
-      </article> <!-- /.interests -->
-      <br>
+      </article>
+      <!-- /.interests -->
+      <br />
       <article class="projects">
         <header>
           <h2>
             <a name="welcome-to-github-pages" class="anchor" href="projects">
-              <span class="octicon octicon-link"></span>
-            </a>Open source projects
+              <span class="octicon octicon-link"></span> </a
+            >Open source projects
           </h2>
         </header>
         <p>Most recently updated repos are shown at the top.</p>
@@ -151,22 +185,37 @@ drink([H | T]) ->
           <h5>Gettin' repos!</h5>
         </section>
       </article>
-    </section> <!-- /.main-content -->
+    </section>
+    <!-- /.main-content -->
 
     <section id="iframe_section"></section>
 
-    <script src='js/interests.js'></script>
-    <script src='js/projects.js'></script>
-    <script src='js/page_header_animation.js'></script>
+    <script src="js/interests.js"></script>
+    <script src="js/projects.js"></script>
+    <script src="js/page_header_animation.js"></script>
 
     <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]
-      ||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();
-      a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;
-      a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script',
-      '//www.google-analytics.com/analytics.js','ga');ga('create',
-      'UA-65909813-1','auto');ga('send','pageview');
+      (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        (i[r] =
+          i[r] ||
+          function() {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(
+        window,
+        document,
+        'script',
+        '//www.google-analytics.com/analytics.js',
+        'ga'
+      );
+      ga('create', 'UA-65909813-1', 'auto');
+      ga('send', 'pageview');
     </script>
-    
   </body>
 </html>
