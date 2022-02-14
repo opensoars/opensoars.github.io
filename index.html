@@ -236,8 +236,6 @@ drink([H | T]) ->
       const keys = [];
 
       document.body.addEventListener('keydown', evt => {
-        console.log(evt);
-
         keys.push(evt.key.toLocaleLowerCase());
 
         if (keys.join('') === 'dasha') {
