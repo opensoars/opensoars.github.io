@@ -231,5 +231,19 @@ drink([H | T]) ->
       ga('create', 'UA-65909813-1', 'auto');
       ga('send', 'pageview');
     </script>
+
+    <script>
+      const keys = [];
+
+      document.body.addEventListener('keydown', evt => {
+        console.log(evt);
+
+        keys.push(evt.key.toLocaleLowerCase());
+
+        if (keys.join('') === 'dasha') {
+          window.location = '/three_index.html';
+        }
+      });
+    </script>
   </body>
 </html>
