@@ -116,7 +116,7 @@ setTimeout(() => {
 
     scene.add(text_mesh);
   }
-}, 2000);
+}, 30000);
 
 var render = function () {
   requestAnimationFrame(render);
