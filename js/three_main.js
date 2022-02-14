@@ -93,7 +93,7 @@ camera.position.z = 5;
 setTimeout(() => {
   texts = [];
 
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < 100; i++) {
     var textShapes = THREE.FontUtils.generateShapes('I love you Dasha <3 :)', {
       size: (Math.random() + 0.75) * max_font_size
     });
@@ -116,7 +116,7 @@ setTimeout(() => {
 
     scene.add(text_mesh);
   }
-}, 30000);
+}, 2000);
 
 var render = function () {
   requestAnimationFrame(render);
